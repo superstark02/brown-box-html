@@ -1644,8 +1644,8 @@ a, button, .item-overlay, .global-overlay, .pagination li .page-number, .scroll-
     color: #ffffff; }
   .btn:hover {
     background-color: transparent;
-    border-color: #ff5151;
-    color: #ff5151; }
+    border-color: #000;
+    color: #000; }
   .btn-hover-1:hover {
     background-color: #ffffff;
     border-color: #ffffff;
