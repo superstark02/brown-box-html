@@ -1,7 +1,6 @@
-
 <!doctype html>
 <html class="no-js" lang="zxx">
- 
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -12,21 +11,37 @@
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="assets/img/icon.png">
 
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
-    <link href="/font-awesome/css/all.css" rel="stylesheet"> <!--load all styles -->
-    <link href="/font-awesome/css/all.min.css" rel="stylesheet"> <!--load all styles -->
-    <link href="/font-awesome/css/brands.css" rel="stylesheet"> <!--load all styles -->
-    <link href="/font-awesome/css/fontawesome.css" rel="stylesheet"> <!--load all styles -->
-    <link href="/font-awesome/css/fontawesome.min.css" rel="stylesheet"> <!--load all styles -->
-    <link href="/font-awesome/css/regular.css" rel="stylesheet"> <!--load all styles -->
+    <link href="/font-awesome/css/all.css" rel="stylesheet">
+    <!--load all styles -->
+    <link href="/font-awesome/css/all.min.css" rel="stylesheet">
+    <!--load all styles -->
+    <link href="/font-awesome/css/brands.css" rel="stylesheet">
+    <!--load all styles -->
+    <link href="/font-awesome/css/fontawesome.css" rel="stylesheet">
+    <!--load all styles -->
+    <link href="/font-awesome/css/fontawesome.min.css" rel="stylesheet">
+    <!--load all styles -->
+    <link href="/font-awesome/css/regular.css" rel="stylesheet">
+    <!--load all styles -->
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+    <script src="assets/js/firebase.js"></script>
 
     <!-- ************************* CSS Files ************************* -->
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/vendor.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/app.css">
 </head>
 
 <body>
@@ -65,7 +80,7 @@
                                                     </a>
                                                 </li>
                                                 <li class="mainmenu__item menu-item-has-children megamenu-holder">
-                                                    <a href="shop.html" class="mainmenu__link">
+                                                    <a class="mainmenu__link">
                                                         <span class="mm-text">About Us</span>
                                                     </a>
                                                     <ul class="megamenu">
@@ -90,7 +105,7 @@
                                                             <a class="megamenu-title" href="#">
                                                                 <span class="mm-text">How We Work</span>
                                                             </a>
-                                                            <ul> 
+                                                            <ul>
                                                                 <li>
                                                                     <a href="shop-list.html">
                                                                         <span class="mm-text">How We Work</span>
@@ -154,11 +169,39 @@
                                                         </li>
                                                     </ul>
                                                 </li>
+                                                <li class="mainmenu__item menu-item-has-children">
+                                                    <a href="#" class="mainmenu__link">
+                                                        <div id="user"></div>
+                                                    </a>
+                                                </li>
                                             </ul>
                                         </nav>
                                     </div>
                                     <div class="header__main-right">
                                         <!--Account Login-->
+                                        <div class="header-toolbar__item header-toolbar--search-btn mainmenu__item menu-item-has-children">
+                                            <a  id="login-auth" class="header-toolbar__btn ">
+                                                <div id="user"></div>
+                                            </a>
+                                        </div>
+                                        <!--Account Login-->
+                                        <div class="header-toolbar-wrap">
+                                            <div class="header-toolbar">
+                                                <div class="header-toolbar__item d-block d-lg-none">
+                                                    <a href="#offcanvasMenu"
+                                                        class="header-toolbar__btn toolbar-btn menu-btn">
+                                                        <div class="hamburger-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -176,31 +219,37 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12">
-                            <div class="element-carousel slick-right-bottom"
-                            data-slick-options='{
+                            <div class="element-carousel slick-right-bottom" data-slick-options='{
                                 "slidesToShow": 1, 
                                 "arrows": true,
                                 "prevArrow": {"buttonClass": "slick-btn slick-prev", "iconClass": "fas fa-arrow-left" },
                                 "nextArrow": {"buttonClass": "slick-btn slick-next", "iconClass": "fas fa-arrow-right" }
-                            }' 
-                            data-slick-responsive='[{"breakpoint": 768, "settings": {"arrows": false}}]'>
+                            }' data-slick-responsive='[{"breakpoint": 768, "settings": {"arrows": false}}]'>
                                 <div class="item">
-                                    <div class="single-slide d-flex align-items-center bg-color" data-bg-color="rgba(255, 219, 22,0.5)">
+                                    <div class="single-slide d-flex align-items-center bg-color"
+                                        data-bg-color="rgba(255, 219, 22,0.5)">
                                         <div class="row align-items-center g-0 w-100">
                                             <div class="col-xl-6 col-md-6 mb-sm--50 order-md-2">
-                                                <figure data-animation="fadeInUp" data-duration=".3s" data-delay=".3s" class="pl-15 pr--60">
-                                                    <img src="https://g.foolcdn.com/image/?url=https%3A//g.foolcdn.com/editorial/images/593627/gettyimages-1185938530.jpg&w=2000&op=resize" alt="Slider O1 image" class="mx-auto">
+                                                <figure data-animation="fadeInUp" data-duration=".3s" data-delay=".3s"
+                                                    class="pl-15 pr--60">
+                                                    <img src="images/w2.png" alt="Slider O1 image" class="mx-auto">
                                                 </figure>
                                             </div>
                                             <div class="col-md-5 col-lg-5 offset-md-1 order-md-1">
                                                 <div class="slider-content">
                                                     <div class="slider-content__text border-color-2 mb--40 mb-md--30">
-                                                        <p class="mb--15" data-animation="fadeInUp" data-duration=".3s" data-delay=".3s">#New Trend</p>
-                                                        <p class="mb--20" data-animation="fadeInUp" data-duration=".3s" data-delay=".3s">Buy Together. Save Together. But products</p>
-                                                        <h1 class="heading__primary lh-pt7" data-animation="fadeInUp" data-duration=".3s" data-delay=".3s"> Wholesale Rates</h1>
+                                                        <p class="mb--15" data-animation="fadeInUp" data-duration=".3s"
+                                                            data-delay=".3s">#New Trend</p>
+                                                        <p class="mb--20" data-animation="fadeInUp" data-duration=".3s"
+                                                            data-delay=".3s">Buy Together. Save Together. But products
+                                                        </p>
+                                                        <h1 class="heading__primary lh-pt7" data-animation="fadeInUp"
+                                                            data-duration=".3s" data-delay=".3s"> Wholesale Rates</h1>
                                                     </div>
                                                     <div class="slider-content__btn">
-                                                        <a href="#" class="btn btn-outline btn-brw-2 btn-brc-2" data-animation="fadeInUp" data-duration=".3s" data-delay=".6s">Shop Now</a>
+                                                        <a href="#" class="btn btn-outline btn-brw-2 btn-brc-2"
+                                                            data-animation="fadeInUp" data-duration=".3s"
+                                                            data-delay=".6s">Shop Now</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -208,22 +257,30 @@
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="single-slide d-flex align-items-center bg-color" data-bg-color="rgba(255, 219, 22,0.5)">
+                                    <div class="single-slide d-flex align-items-center bg-color"
+                                        data-bg-color="rgba(255, 219, 22,0.5)">
                                         <div class="row align-items-center g-0 w-100">
                                             <div class="col-xl-7 col-md-6 mb-sm--50">
-                                                <figure data-animation="fadeInUp" data-duration=".3s" data-delay=".3s" class="plr--15">
-                                                    <img src="https://template.hasthemes.com/beck/beck/assets/img/slider/slider-01-img-01.png" alt="Slider O1 image" class="mx-auto">
+                                                <figure data-animation="fadeInUp" data-duration=".3s" data-delay=".3s"
+                                                    class="plr--15">
+                                                    <img src="images/w1.png" alt="Slider O1 image" class="mx-auto">
                                                 </figure>
                                             </div>
                                             <div class="col-md-6 col-lg-5 offset-lg-1 offset-xl-0">
                                                 <div class="slider-content">
                                                     <div class="slider-content__text mb--40 mb-md--30">
-                                                        <p class="mb--15" data-animation="fadeInUp" data-duration=".3s" data-delay=".3s">#New Trend</p>
-                                                        <p class="mb--20" data-animation="fadeInUp" data-duration=".3s" data-delay=".3s">Enlight your world. Make yourself more bright.</p>
-                                                        <h1 class="heading__primary lh-pt7" data-animation="fadeInUp" data-duration=".3s" data-delay=".3s">Wholesale Rates</h1>
+                                                        <p class="mb--15" data-animation="fadeInUp" data-duration=".3s"
+                                                            data-delay=".3s">#New Trend</p>
+                                                        <p class="mb--20" data-animation="fadeInUp" data-duration=".3s"
+                                                            data-delay=".3s">Enlight your world. Make yourself more
+                                                            bright.</p>
+                                                        <h1 class="heading__primary lh-pt7" data-animation="fadeInUp"
+                                                            data-duration=".3s" data-delay=".3s">Wholesale Rates</h1>
                                                     </div>
                                                     <div class="slider-content__btn">
-                                                        <a href="#" class="btn btn-outline btn-brw-2" data-animation="fadeInUp" data-duration=".3s" data-delay=".6s">Shop Now</a>
+                                                        <a href="#" class="btn btn-outline btn-brw-2"
+                                                            data-animation="fadeInUp" data-duration=".3s"
+                                                            data-delay=".6s">Shop Now</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -236,7 +293,7 @@
                 </div>
             </section>
             <!-- Slider area End -->
-            
+
             <!-- Banner Area Start -->
             <section class="banner-area mb--75 mb-md--55">
                 <div class="container">
@@ -245,12 +302,14 @@
                             <div class="banner banner-info-top ">
                                 <div class="banner__inner ">
                                     <figure class="banner__image">
-                                        <img src="https://template.hasthemes.com/beck/beck/assets/img/banner/banner-01.jpg" alt="Banner">
+                                        <img src="https://template.hasthemes.com/beck/beck/assets/img/banner/banner-01.jpg"
+                                            alt="Banner">
                                     </figure>
-                                    <div class="banner__info pt--105 pt-md--80 pl--70 pl-md--50 " >
-                                        <div class="banner__info--inner width-1 " >
+                                    <div class="banner__info pt--105 pt-md--80 pl--70 pl-md--50 ">
+                                        <div class="banner__info--inner width-1 ">
                                             <h2 class="banner__title-1">Carnival Full Set</h2>
-                                            <p class="banner__text-1 mb--15">Soft and comfortable for the whole family</p>
+                                            <p class="banner__text-1 mb--15">Soft and comfortable for the whole family
+                                            </p>
                                             <a href="shop.html" class="banner__btn">Buy Now</a>
                                         </div>
                                     </div>
@@ -262,7 +321,8 @@
                             <div class="banner banner-info-right-center mb--30">
                                 <div class="banner__inner">
                                     <figure class="banner__image">
-                                        <img src="https://template.hasthemes.com/beck/beck/assets/img/banner/banner-02.jpg" alt="Banner">
+                                        <img src="https://template.hasthemes.com/beck/beck/assets/img/banner/banner-02.jpg"
+                                            alt="Banner">
                                     </figure>
                                     <div class="banner__info pr--70 pr-md--50">
                                         <div class="banner__info--inner width-2">
@@ -277,7 +337,8 @@
                             <div class="banner banner-info-left-center">
                                 <div class="banner__inner">
                                     <figure class="banner__image">
-                                        <img src="https://template.hasthemes.com/beck/beck/assets/img/banner/banner-03.jpg" alt="Banner">
+                                        <img src="https://template.hasthemes.com/beck/beck/assets/img/banner/banner-03.jpg"
+                                            alt="Banner">
                                     </figure>
                                     <div class="banner__info pl--85 pl-md--50">
                                         <div class="banner__info--inner width-3 text-right">
@@ -306,13 +367,36 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="tab-content" id="product-tab-content">
-                                <div class="tab-pane fade show active" id="new-all" role="tabpanel" aria-labelledby="new-all-tab">
+                                <div class="tab-pane fade show active" id="new-all" role="tabpanel"
+                                    aria-labelledby="new-all-tab">
                                     <div class="row">
                                         <div class="col-lg-3 col-sm-6 mb--45">
                                             <div class="ft-product HTfadeInUp">
                                                 <div class="product-inner">
 
-                                                    
+                                                    <div class="product-image">
+                                                        <figure class="product-image--holder">
+                                                            <img src="https://template.hasthemes.com/beck/beck/assets/img/products/prod-04-270x300.jpg"
+                                                                alt="Product">
+                                                        </figure>
+                                                        <a href="product-details.html" class="product-overlay"></a>
+                                                    </div>
+                                                    <div class="product-info">
+                                                        <div class="product-category">
+                                                            <a href="product-details.html">Chair</a>
+                                                        </div>
+                                                        <h3 class="product-title"><a href="product-details.html">Golden
+                                                                Easy Spot Chair.</a></h3>
+                                                        <div class="product-info-bottom">
+                                                            <div class="product-price-wrapper">
+                                                                <span class="money">$150</span>
+                                                            </div>
+                                                            <a href="cart.html" class="add-to-cart pr--15">
+                                                                <i class="fas fa-plus"></i>
+                                                                <span>Buy Now</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
 
                                                 </div>
                                             </div>
@@ -321,7 +405,7 @@
                                             <div class="ft-product HTfadeInUp">
                                                 <div class="product-inner">
 
-                                                    
+
 
                                                 </div>
                                             </div>
@@ -330,8 +414,8 @@
                                             <div class="ft-product HTfadeInUp">
                                                 <div class="product-inner">
 
-                                                    
-                                                    
+
+
                                                 </div>
                                             </div>
                                         </div>
@@ -339,8 +423,8 @@
                                             <div class="ft-product HTfadeInUp">
                                                 <div class="product-inner">
 
-                                                    
-                                                    
+
+
                                                 </div>
                                             </div>
                                         </div>
@@ -360,12 +444,10 @@
                     <div class="row justify-content-center">
                         <div class="col-xl-12">
                             <div class="brand-log-wrapper bg-color ptb--75" data-bg-color="rgba(255, 219, 22, 0.5)">
-                                <div class="element-carousel"
-                                data-slick-options='{
+                                <div class="element-carousel" data-slick-options='{
                                     "slidesToShow": 5,
                                     "autoplay": true
-                                }'
-                                data-slick-responsive='[
+                                }' data-slick-responsive='[
                                     {"breakpoint": 1200, "settings": {"slidesToShow": 4}},
                                     {"breakpoint": 992, "settings": {"slidesToShow": 3}},
                                     {"breakpoint": 768, "settings": {"slidesToShow": 2}},
@@ -373,27 +455,32 @@
                                 ]'>
                                     <div class="item">
                                         <figure>
-                                            <img src="https://template.hasthemes.com/beck/beck/assets/img/brand/brand-01.png" alt="Brand" class="mx-auto">
+                                            <img src="https://template.hasthemes.com/beck/beck/assets/img/brand/brand-01.png"
+                                                alt="Brand" class="mx-auto">
                                         </figure>
                                     </div>
                                     <div class="item">
                                         <figure>
-                                            <img src="https://template.hasthemes.com/beck/beck/assets/img/brand/brand-02.png" alt="Brand" class="mx-auto">
+                                            <img src="https://template.hasthemes.com/beck/beck/assets/img/brand/brand-02.png"
+                                                alt="Brand" class="mx-auto">
                                         </figure>
                                     </div>
                                     <div class="item">
                                         <figure>
-                                            <img src="https://template.hasthemes.com/beck/beck/assets/img/brand/brand-03.png" alt="Brand" class="mx-auto">
+                                            <img src="https://template.hasthemes.com/beck/beck/assets/img/brand/brand-03.png"
+                                                alt="Brand" class="mx-auto">
                                         </figure>
                                     </div>
                                     <div class="item">
                                         <figure>
-                                            <img src="https://template.hasthemes.com/beck/beck/assets/img/brand/brand-04.png" alt="Brand" class="mx-auto">
+                                            <img src="https://template.hasthemes.com/beck/beck/assets/img/brand/brand-04.png"
+                                                alt="Brand" class="mx-auto">
                                         </figure>
                                     </div>
                                     <div class="item">
                                         <figure>
-                                            <img src="https://template.hasthemes.com/beck/beck/assets/img/brand/brand-05.png" alt="Brand" class="mx-auto">
+                                            <img src="https://template.hasthemes.com/beck/beck/assets/img/brand/brand-05.png"
+                                                alt="Brand" class="mx-auto">
                                         </figure>
                                     </div>
                                 </div>
@@ -413,7 +500,8 @@
                                 <div class="best-sale-product__inner bg-color" data-bg-color="#ffffff">
                                     <figure class="best-sale-product__img">
                                         <a href="product-details.html">
-                                            <img src="https://template.hasthemes.com/beck/beck/assets/img/products/best-product-01.png" alt="Best Sale Product">
+                                            <img src="https://template.hasthemes.com/beck/beck/assets/img/products/best-product-01.png"
+                                                alt="Best Sale Product">
                                         </a>
                                     </figure>
                                     <div class="best-sale-product__info">
@@ -422,11 +510,14 @@
                                             <span class="best-sale-product__heading--sub">Get Best Discount</span>
                                         </h2>
                                         <p class="best-sale-product__desc">A big family comfortable cousine.</p>
-                                        <a href="shop.html" class="btn btn-outline btn-size-md btn-color-primary btn-shape-round btn-hover-2">Shop Now</a>
+                                        <a href="shop.html"
+                                            class="btn btn-outline btn-size-md btn-color-primary btn-shape-round btn-hover-2">Shop
+                                            Now</a>
                                     </div>
                                 </div>
                                 <figure class="best-sale-product__top-image">
-                                    <img src="https://template.hasthemes.com/beck/beck/assets/img/others/1.png" alt="bg image">
+                                    <img src="https://template.hasthemes.com/beck/beck/assets/img/others/1.png"
+                                        alt="bg image">
                                 </figure>
                             </div>
                         </div>
@@ -449,8 +540,7 @@
                                 "spaceBetween": 30,
                                 "slidesToShow": 3,
                                 "slidesToScroll": 1
-                            }'
-                            data-slick-responsive='[
+                            }' data-slick-responsive='[
                                 {"breakpoint": 992, "settings": {"slidesToShow": 2}},
                                 {"breakpoint": 768, "settings": {"slidesToShow": 1}}
                             ]'>
@@ -459,12 +549,14 @@
                                         <div class="blog__inner">
                                             <figure class="blog__media">
                                                 <div class="image">
-                                                    <img src="https://template.hasthemes.com/beck/beck/assets/img/blog/blog-01.jpg" alt="Blog" class="w-100">
+                                                    <img src="https://template.hasthemes.com/beck/beck/assets/img/blog/blog-01.jpg"
+                                                        alt="Blog" class="w-100">
                                                     <a href="blog-details-image.html" class="item-overlay"></a>
                                                 </div>
                                             </figure>
                                             <div class="blog__info">
-                                                <h2 class="blog__title"><a href="blog-details-image.html">There are many variations of passages of Lorem.</a></h2>
+                                                <h2 class="blog__title"><a href="blog-details-image.html">There are many
+                                                        variations of passages of Lorem.</a></h2>
                                             </div>
                                         </div>
                                     </article>
@@ -474,12 +566,14 @@
                                         <div class="blog__inner">
                                             <figure class="blog__media">
                                                 <div class="image">
-                                                    <img src="https://template.hasthemes.com/beck/beck/assets/img/blog/blog-02.jpg" alt="Blog" class="w-100">
+                                                    <img src="https://template.hasthemes.com/beck/beck/assets/img/blog/blog-02.jpg"
+                                                        alt="Blog" class="w-100">
                                                     <a href="blog-details-image.html" class="item-overlay"></a>
                                                 </div>
                                             </figure>
                                             <div class="blog__info">
-                                                <h2 class="blog__title"><a href="blog-details-image.html">There are many variations of passages of Lorem.</a></h2>
+                                                <h2 class="blog__title"><a href="blog-details-image.html">There are many
+                                                        variations of passages of Lorem.</a></h2>
                                             </div>
                                         </div>
                                     </article>
@@ -489,12 +583,14 @@
                                         <div class="blog__inner">
                                             <figure class="blog__media">
                                                 <div class="image">
-                                                    <img src="https://template.hasthemes.com/beck/beck/assets/img/blog/blog-03.jpg" alt="Blog" class="w-100">
+                                                    <img src="https://template.hasthemes.com/beck/beck/assets/img/blog/blog-03.jpg"
+                                                        alt="Blog" class="w-100">
                                                     <a href="blog-details-image.html" class="item-overlay"></a>
                                                 </div>
                                             </figure>
                                             <div class="blog__info">
-                                                <h2 class="blog__title"><a href="blog-details-image.html">There are many variations of passages of Lorem.</a></h2>
+                                                <h2 class="blog__title"><a href="blog-details-image.html">There are many
+                                                        variations of passages of Lorem.</a></h2>
                                             </div>
                                         </div>
                                     </article>
@@ -520,10 +616,10 @@
                                         <img src="images/logo.PNG" alt="Logo">
                                     </figure>
                                     <p>mail@brownbox.store<br />
-                                      +91 9910197196 <br />
-                                      112, Bazz Shopping Complex <br />
-                                      Pocket 8, Sector 24 <br />
-                                      Rohini, Delhi - 110085 </p>
+                                        +91 9910197196 <br />
+                                        112, Bazz Shopping Complex <br />
+                                        Pocket 8, Sector 24 <br />
+                                        Rohini, Delhi - 110085 </p>
                                 </div>
                             </div>
                         </div>
@@ -621,7 +717,8 @@
                 <div class="container-fluid">
                     <div class="row border-top ptb--20">
                         <div class="col-12 text-center">
-                            <p class="copyright-text">&copy; 2021 brownbox.store Made With <i class="fas fa-heart"></i> By brownbox.</p>
+                            <p class="copyright-text">&copy; 2021 brownbox.store Made With <i class="fas fa-heart"></i>
+                                By brownbox.</p>
                         </div>
                     </div>
                 </div>
@@ -719,7 +816,7 @@
                                         </li>
                                         <li>
                                             <a href="product-details-affiliate.html">Affiliate Proudct</a>
-                                        </li>                                                    
+                                        </li>
                                         <li>
                                             <a href="product-details-variable.html">Variable Proudct</a>
                                         </li>
@@ -819,7 +916,7 @@
         <!-- Global Overlay End -->
     </div>
     <!-- Main Wrapper End -->
- 
+
 
     <!-- ************************* JS Files ************************* -->
 
@@ -828,6 +925,8 @@
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/getUser.js"></script>
+
 </body>
 
 </html>
