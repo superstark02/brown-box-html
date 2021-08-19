@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  }
+  
+  @font-face {
+    font-family: 'neometric';
+    src: local('neometric'), url(../fonts/Neometric/NeometricBlack.otf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'medium';
+    src: local('medium'), url(../fonts/Neometric/NeometricAltMedium.otf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'thin';
+    src: local('thin'), url(../fonts/Neometric/NeometricAltLightItalic.otf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'satisfy';
+    src: local('satisfy'), url(../fonts/Satisfy/Satisfy-Regular.ttf) format('truetype');
+  }
+  
+  .font-a {
+    font-family: neometric;
+    font-size: 30px;
+  }
