@@ -185,7 +185,7 @@ a, button {
   cursor: pointer; }
 
 a:hover {
-  color: #ff5151;
+  color: #000000;
   text-decoration: none; }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -934,7 +934,7 @@ a, button, .item-overlay, .global-overlay, .pagination li .page-number, .scroll-
   .ft-preloader .ft-child {
     width: 20px;
     height: 20px;
-    background-color: #ff5151;
+    background-color: #000000;
     border-radius: 100%;
     display: inline-block;
     -webkit-animation: ft-bouncedelay 1.4s ease-in-out 0s infinite both;
@@ -1258,7 +1258,7 @@ a, button, .item-overlay, .global-overlay, .pagination li .page-number, .scroll-
         .header-toolbar--minicart-btn .toolbar-btn span {
           margin-left: 5px; } }
       .header-toolbar--minicart-btn .toolbar-btn span:hover {
-        border-color: #ff5151; }
+        border-color: #000000; }
   .header-toolbar__btn {
     font-size: 30px; }
     @media (max-width: 35.94em) {
@@ -1385,7 +1385,7 @@ a, button, .item-overlay, .global-overlay, .pagination li .page-number, .scroll-
         margin-bottom: 6px;
         transition: 0.4s; }
         .bl-widget.post .inner .post-list li a:hover {
-          color: #ff5151; }
+          color: #000000; }
       .bl-widget.post .inner .post-list li span {
         color: #bab9be; }
         .bl-widget.post .inner .post-list li span i {
@@ -1398,7 +1398,7 @@ a, button, .item-overlay, .global-overlay, .pagination li .page-number, .scroll-
     align-items: center;
     margin-bottom: 20px; }
     .bl-widget.quote .inner .post-quote .quote-info i {
-      color: #ff5151;
+      color: #000000;
       padding-right: 15px;
       font-size: 22px; }
   .bl-widget.quote .inner .post-quote p {
@@ -1585,7 +1585,7 @@ a, button, .item-overlay, .global-overlay, .pagination li .page-number, .scroll-
 /*-- 22.00 - Global Button --*/
 .btn {
   color: #ffffff;
-  background-color: #ff5151;
+  background-color: #000000;
   padding: 20px 40px; }
   @media (max-width: 74.9375em) {
     .btn {
@@ -1633,14 +1633,14 @@ a, button, .item-overlay, .global-overlay, .pagination li .page-number, .scroll-
   .btn-brw-2 {
     border-width: 2px; }
   .btn-brc-primary {
-    border-color: #ff5151; }
+    border-color: #000000; }
   .btn-brc-2 {
     border-color: #585858; }
   .btn-color-primary {
-    color: #ff5151; }
+    color: #000000; }
   .btn-bg-primary {
-    background-color: #ff5151;
-    border-color: #ff5151;
+    background-color: #000000;
+    border-color: #000000;
     color: #ffffff; }
   .btn:hover {
     background-color: transparent;
@@ -1649,10 +1649,10 @@ a, button, .item-overlay, .global-overlay, .pagination li .page-number, .scroll-
   .btn-hover-1:hover {
     background-color: #ffffff;
     border-color: #ffffff;
-    color: #ff5151; }
+    color: #000000; }
   .btn-hover-2:hover {
-    background-color: #ff5151;
-    border-color: #ff5151;
+    background-color: #000000;
+    border-color: #000000;
     color: #ffffff; }
 
 /*-- 22.01 - Action Button --*/
@@ -1795,9 +1795,9 @@ a, button, .item-overlay, .global-overlay, .pagination li .page-number, .scroll-
     -ms-transform: translate(-50%, 0);
     -o-transform: translate(-50%, 0);
     transform: translate(-50%, 0); }
-    .product-slide-nav.slick-center-bottom .slick-btn .la-angle-up:before {
+    .product-slide-nav.slick-center-bottom .slick-btn .fa-angle-up:before {
       content: '\f111'; }
-    .product-slide-nav.slick-center-bottom .slick-btn .la-angle-down:before {
+    .product-slide-nav.slick-center-bottom .slick-btn .fa-angle-down:before {
       content: '\f112'; } }
 
 @media (max-width: 35.94em) {
@@ -2356,7 +2356,7 @@ a, button, .item-overlay, .global-overlay, .pagination li .page-number, .scroll-
 
 @media (min-width: 62em) {
   .main-navigation .mainmenu__item.active > a {
-    color: #ff5151; } }
+    color: #000000; } }
 
 @media (min-width: 62em) {
   .main-navigation .mainmenu__item.menu-item-has-children > ul {
@@ -2406,11 +2406,11 @@ a, button, .item-overlay, .global-overlay, .pagination li .page-number, .scroll-
     -ms-transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
     -o-transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
     transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
-    background-color: #ff5151; } }
+    background-color: #000000; } }
 
 @media (min-width: 62em) {
   .main-navigation .mainmenu__item.menu-item-has-children > ul li a:hover {
-    color: #ff5151; } }
+    color: #000000; } }
 
 @media (min-width: 62em) {
   .main-navigation .mainmenu__item.menu-item-has-children > ul li a:hover:not(.megamenu-title) .mm-text:after {
@@ -2500,13 +2500,13 @@ a, button, .item-overlay, .global-overlay, .pagination li .page-number, .scroll-
 
 @media (min-width: 62em) {
   .main-navigation .mainmenu__item.menu-item-has-children > ul.megamenu > li a.megamenu-title:hover {
-    color: #ff5151; } }
+    color: #000000; } }
 
 @media (min-width: 62em) {
   .main-navigation .mainmenu__item.menu-item-has-children > ul.megamenu > li a.megamenu-title .mm-text:after {
     position: absolute;
     content: '';
-    background-color: #ff5151;
+    background-color: #000000;
     width: 50%;
     height: 2px;
     bottom: -10px;
@@ -2637,9 +2637,9 @@ a, button, .item-overlay, .global-overlay, .pagination li .page-number, .scroll-
     .offcanvas-navigation .offcanvas-menu li.menu-open > .menu-expand i:before {
       content: '\f113'; }
     .offcanvas-navigation .offcanvas-menu li:hover > a {
-      color: #ff5151 !important; }
+      color: #000000 !important; }
     .offcanvas-navigation .offcanvas-menu li:hover > .menu-expand {
-      color: #ff5151 !important; }
+      color: #000000 !important; }
   .offcanvas-navigation .site-info {
     margin-bottom: 35px;
     margin-top: auto; }
@@ -3720,13 +3720,13 @@ a, button, .item-overlay, .global-overlay, .pagination li .page-number, .scroll-
   background-color: #ffffff; }
 
 .pagination li .page-number.current, .pagination li .page-number:hover, .message-box a, .error h1, .btn-close:hover, .comment-author a:hover, .comment-reply-link, .cart-form__btn:hover, .mini-cart__product-remove:hover, .mini-cart__product-title:hover, .custom-close:hover i, .product-price-wrapper .money, .ft-product .product-inner .add-to-cart, .product-summary .product-navigation a:hover, .product-summary .product-title a:hover, .variation-form .product-size-variations .product-size-variation-btn:hover, .variation-form .product-size-variations .product-size-variation-btn.selected, .table tbody td.product-remove a, .table.compare-table tbody .remove a, .table.shop_attributes th a:hover, .table.shop_attributes td a:hover {
-  color: #ff5151; }
+  color: #000000; }
 
 .heading__secondary:after, .pagination li .page-number, .pagination li .dot, .blog__info:before, .slick-dots li, .newsletter-form__btn, .searchform--2 .searchform__submit, .product-badge, .user-dashboard-tab__head .nav-link.active, .user-dashboard-tab__head .nav-link:hover {
-  background-color: #ff5151; }
+  background-color: #000000; }
 
 .icon-outline {
-  border-color: #ff5151; }
+  border-color: #000000; }
 
 .product-size .action-btn span.current, .product-size-swatch-btn {
   color: #000000; }
@@ -3747,7 +3747,7 @@ a, button, .item-overlay, .global-overlay, .pagination li .page-number, .scroll-
   background-color: transparent; }
 
 .color--primary {
-  color: #ff5151 !important; }
+  color: #000000 !important; }
 
 .color--light {
   color: #999999 !important; }
@@ -3795,10 +3795,10 @@ a, button, .item-overlay, .global-overlay, .pagination li .page-number, .scroll-
   background-color: #333333; }
 
 .bg--primary {
-  background-color: #ff5151; }
+  background-color: #000000; }
 
 .bd-color--primary {
-  border-color: #ff5151; }
+  border-color: #000000; }
 
 /*****************************
 64 - Utilities - Spacing
