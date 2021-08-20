@@ -6,3 +6,70 @@
     font-weight: 600;
     font-size: 17px;
 }
+
+.product-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+
+.page-banner h2 {
+    font-size: 39px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .page-banner h2 {
+      font-size: 36px;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .page-banner h2 {
+      font-size: 30px;
+    }
+  }
+  
+  @media only screen and (max-width: 575px) {
+    .page-banner h2 {
+      font-size: 26px;
+    }
+  }
+
+  /*-- 
+    - Page Banner Section
+------------------------------------------*/
+.page-banner-section {
+    padding: 120px 0 130px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  @media only screen and (min-width: 1200px) and (max-width: 1499px) {
+    .page-banner-section {
+      padding: 100px 0 110px;
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .page-banner-section {
+      padding: 90px 0 100px;
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .page-banner-section {
+      padding: 80px 0 90px;
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .page-banner-section {
+      padding: 70px 0 80px;
+      width: 100%;
+    }
+  }
