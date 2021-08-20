@@ -1,9 +1,8 @@
-
-
 firebase.auth().onAuthStateChanged(user => {
     if (user) {
         document.getElementById("login-button").hidden = true
         document.getElementById("user-name").innerHTML = "Hi "+user.displayName
+        document.getElementById("user-name").href = "my-account.html"
     } else {
         document.getElementById("login-button").hidden = false
         document.getElementById("login-image").hidden = true
