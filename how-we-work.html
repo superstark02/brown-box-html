@@ -43,6 +43,8 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/how-we-work.css">
+
 
     <link href="assets/images/favicon.ico" type="img/x-icon" rel="shortcut icon">
     <!-- All css files are included here. -->
@@ -228,16 +230,16 @@
 
         <!-- Main Content Wrapper Start -->
         <main class="main-content-wrapper">
-            <div class="page-banner-section section bg-image" style="background-image: url(https://images.unsplash.com/photo-1580234831315-438a4813685c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=747&q=80);">
-                <div class="container">
+            <div class="page-banner-section section bg-image"  style="background-image: url(./images/hww/hotel.jpg);">
+                <div class="container" >
                     <div class="row">
                         <div class="col">
 
-                            <div class="page-banner text-left">
-                                <h2>FAQs</h2>
+                            <div class="page-banner text-left" >
+                                <h2>How We Work</h2>
                                 <ul class="page-breadcrumb">
                                     <li><a href="index.html">Home</a></li>
-                                    <li>Faq</li>
+                                    <li>How We Work</li>
                                 </ul>
                             </div>
 
@@ -247,39 +249,162 @@
             </div>
 
             <div
-                class="faq-section section pt-90 pt-lg-70 pt-md-60 pt-sm-50 pt-xs-40  pb-90 pb-lg-70 pb-md-60 pb-sm-50 pb-xs-40">
+                class="about-us-area section pt-90 pt-lg-70 pt-md-60 pt-sm-50 pt-xs-45 pb-70 pb-lg-50 pb-md-60 pb-sm-60 pb-xs-50">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-12">
+                            <div class="about-us-img-wrapper mb-30 mb-xs-15">
+                                <div class="about-us-image img-full">
+                                    <a href="#"><img src="" alt="" /></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="about-us-content pl-30 pl-md-0 pl-sm-0 pl-xs-0">
+                                <span>Concept</span>
+                                <h2>Team Buying</h2>
+                                <p>When multiple users come together and buy a product, it's called <b>team buying</b>
+                                </p>
+                                <p>Team buying can save up to 90% </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row mb-50 mb-xs-20" style="max-width: 100%;">
+                <div class="col">
+                    <div class="section-title text-center">
+                        <h2>Explanation Video</h2>
+                        <span>WHAT IS BROWN BOX</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner-section section pb-40 pb-sm-30 pb-xs-0">
+                <div class="container">
+                    <video width="100%" controls>
+                        <source src={xplain} />
+                    </video>
+                </div>
+            </div>
+
+
+            <div class="features-section section pt-30 pt-lg-15 pt-md-0 pt-sm-0 pt-xs-15">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12">
-                            <div class="faq-content">
-                                <div class="faq-desc">
-                                    <h3>Below are frequently asked questions, you may find the answer for yourself</h3>
-                                </div>
-                            </div>
-                            <div class="faq-accordion">
-                                <div id="accordion">
-                                    <div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingThree">
-                                                <h5 class="mb-0">
-                                                    <a class="collapsed" data-toggle="collapse"
-                                                        data-target={"#"+item.collapse} aria-expanded="false"
-                                                        aria-controls={item.collapse}>
-                                                        {item.q}
-                                                    </a>
-                                                </h5>
-                                            </div>
-                                            <div id={item.collapse} class="collapse" aria-labelledby={item.heading}
-                                                data-parent="#accordion">
-                                                <div class="card-body">
-                                                    {item.a}
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
 
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-feature mb-30">
+                                <div class="feature-image">
+                                    <img src="https://demo.hasthemes.com/nelson-preview/nelson/assets/images/icons/feature-1.png"
+                                        class="img-fluid" alt="" />
+                                </div>
+                                <div class="feature-content">
+                                    <h4 class="title">Warranty And Service</h4>
+                                    <p class="short-desc">
+                                        No compromise on warranty. Get full warranty/guarantee with the bill.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-feature mb-30">
+                                <div class="feature-image">
+                                    <img src="https://demo.hasthemes.com/nelson-preview/nelson/assets/images/icons/feature-2.png"
+                                        class="img-fluid" alt="" />
+                                </div>
+                                <div class="feature-content">
+                                    <h4 class="title">Quality Products</h4>
+                                    <p class="short-desc">We ensure the product quality, that's our priority</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-feature mb-30">
+                                <div class="feature-image">
+                                    <img src="https://demo.hasthemes.com/nelson-preview/nelson/assets/images/icons/feature-3.png"
+                                        class="img-fluid" alt="" />
+                                </div>
+                                <div class="feature-content">
+                                    <h4 class="title">Easy cancellations</h4>
+                                    <p class="short-desc">Cancel your order anytime before shipping.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner-section section pb-40 pb-sm-30 pb-xs-0">
+                <div class="container wrap">
+                    <img width="60%" src={idea}></img>
+                </div>
+            </div>
+
+            <div class="row mb-50 mb-xs-20">
+                <div class="col">
+                    <div class="section-title text-center">
+                        <h2>Efficient Supply Chain</h2>
+                        <span>DIRECT SHIPPING</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="how-we-work-cnt">
+                    <div class="how-we-work-child">
+                        <div class="wrap">
+                            <img src="/images/hww/warehouse.png" alt="i" width="80%" />
+                        </div>
+                        <div>
+                            Warehouse
+                        </div>
+                    </div>
+
+                    <div>
+                        <img class="chev" src="https://img.icons8.com/fluent/48/000000/chevron-right.png" />
+                    </div>
+
+                    <div class="how-we-work-child">
+                        <div class="wrap">
+                            <img src="/images/hww/wholeseller.png" alt="i" width="80%" />
+                        </div>
+                        <div>
+                            Retailer
+                        </div>
+                        <div class="skip">
+                            <i class="fa fa-ban skip"></i>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img class="chev" src="https://img.icons8.com/fluent/48/000000/chevron-right.png" />
+                    </div>
+
+                    <div class="how-we-work-child">
+                        <div class="wrap">
+                            <img src="/images/hww/shop.png" alt="i" width="80%" />
+                        </div>
+                        <div>
+                            Showroom
+                        </div>
+                        <div class="skip">
+                            <i class="fa fa-ban skip"></i>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img class="chev" src="https://img.icons8.com/fluent/48/000000/chevron-right.png" />
+                    </div>
+
+                    <div class="how-we-work-child">
+                        <div class="wrap" style="height:100%">
+                            <img src="/images/hww/customer.png" alt="i" width="80%" />
+                        </div>
+                        <div>
+                            To You
                         </div>
                     </div>
                 </div>
